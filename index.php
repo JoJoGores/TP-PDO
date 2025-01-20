@@ -13,7 +13,7 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.css">
-
+    <script src="https://kit.fontawesome.com/e7192822dc.js" crossorigin="anonymous"></script>
 
     <style>
       .bd-placeholder-img {
@@ -39,28 +39,30 @@
 
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gestion des genres</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="#">Listes des genres</a>
+          <a class="dropdown-item" href="#">Ajouter des genres</a>
+        </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gestion des auteurs</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Listes des auteurs</a>
+          <a class="dropdown-item" href="#">Ajouter des auteurs</a>
+          <a class="dropdown-item" href="#">Rechercher des auteurs</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-regular fa-flag"></i> Gestion des genres</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="#">Listes des nationalitées</a>
+          <a class="dropdown-item" href="#">Ajouter des nationalitées</a>
         </div>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
 </nav>
 
@@ -86,7 +88,7 @@
       <div class="col-md-4">
         <h2>Heading</h2>
         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-warning" href="#" role="button">View details &raquo;</a></p>
+        <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
       </div>
       <div class="col-md-4">
         <h2>Heading</h2>
@@ -94,38 +96,43 @@
         <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
       </div>
     </div>
-
+    </div>
     <hr>
 
   </div> <!-- /container -->
       <div class="container">
-        <div class="col">
-        <div class="col-md-4"></div>
-            <div class="card border-primary mb-3" style="max-width: 20rem;">
-    <div class="card-header"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">En-tête</font></font></div>
-    <div class="card-body">
+      <div class="row">
+      <div class="col-md-4">
+          <div class="card border-primary mb-3" style="max-width: 20rem;">
+      <div class="card-header"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">En-tête</font></font></div>
+      <div class="card-body">
         <h4 class="card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Titre de la carte principale</font></font></h4>
         <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Quelques exemples de texte rapides pour développer le titre de la carte et constituer l'essentiel du contenu de la carte.</font></font></p>
-    </div>
-</div>
-        <div class="col-md-4"></div>
-            <div class="card border-primary mb-3" style="max-width: 20rem;">
-    <div class="card-header"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">En-tête</font></font></div>
-    <div class="card-body">
-        <h4 class="card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Titre de la carte principale</font></font></h4>
-        <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Quelques exemples de texte rapides pour développer le titre de la carte et constituer l'essentiel du contenu de la carte.</font></font></p>
-    </div>
-</div>
-        <div class="col-md-4"></div>
-            <div class="card border-primary mb-3" style="max-width: 20rem;">
-    <div class="card-header"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">En-tête</font></font></div>
-    <div class="card-body">
-        <h4 class="card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Titre de la carte principale</font></font></h4>
-        <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Quelques exemples de texte rapides pour développer le titre de la carte et constituer l'essentiel du contenu de la carte.</font></font></p>
-    </div>
+      </div>
 </div>
       </div>
+
+      <div class="col-md-4">
+          <div class="card border-primary mb-3" style="max-width: 20rem;">
+      <div class="card-header"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">En-tête</font></font></div>
+      <div class="card-body">
+        <h4 class="card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Titre de la carte principale</font></font></h4>
+        <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Quelques exemples de texte rapides pour développer le titre de la carte et constituer l'essentiel du contenu de la carte.</font></font></p>
       </div>
+</div>
+      </div>
+
+      <div class="col-md-4">
+          <div class="card border-primary mb-3" style="max-width: 20rem;">
+      <div class="card-header"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">En-tête</font></font></div>
+      <div class="card-body">
+        <h4 class="card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Titre de la carte principale</font></font></h4>
+        <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Quelques exemples de texte rapides pour développer le titre de la carte et constituer l'essentiel du contenu de la carte.</font></font></p>
+      </div>
+</div>
+      </div>
+    </div>
+    </div>
 </main>
 
 <footer class="container">
