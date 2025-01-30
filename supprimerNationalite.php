@@ -21,7 +21,6 @@ if($nb == 1) {
     </div>
 </div>
 <a href="listenationalites.php" class="btn btn-primary"> Revenir a la liste des nationalitées </a>
-
 </div>
   
 
