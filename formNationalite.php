@@ -1,24 +1,42 @@
 <?php include "header.php";
 include "connexionpdo.php";
 $action=$_GET['action'];
+
+
 if($action == "Modifier"){
-    include "connexionpdo.php";
     $num=$_GET['num'];
     $req = $monPdo->prepare("select * from nationalite where num= :num");
     $req->setFetchMode(PDO::FETCH_OBJ);
     $req->bindParam(':num', $num);
     $req->execute();
     $laNationalite=$req->fetch();
+
 }
+    $reqContinent = $monPdo->prepare("select * from continent");
+    $req->setFetchMode(PDO::FETCH_OBJ);
+    $reqContinent->execute();
+    $lesContinents=$reqContinent-> fetchAll();
 ?>
 
 <main role="main">
 <div class="container mt-5">
-<h2 class='pt-3 text-center' > <?php echo $action?> Une nationalité <h2>
-    <form action="valideFormNationalite.php?=action= <?php echo $action?>" method="post" class="col-md-6 offset-md-3 border border-primary p-3 rounded">
+<h2 class='pt-3 text-center' > <?php echo $action?> Une nationalité </h2>
+    <form action="valideFormNationalite.php?action= <?php echo $action?>" method="post" class="col-md-6 offset-md-3 border border-primary p-3 rounded">
         <div class="form-group">
             <label for ="libelle"> Libellé </label>
             <input type="text" class='form-control' id='libelle' placeholder='Saisir le libellé' name='libelle' value="<?php if($action == "Modifier") {echo $laNationalite->libelle ;} ?>">
+        </div>
+        <div class="form-group">
+            <label for ="Continent"> Libellé </label>
+           <select name="continent" class="form-control">
+                <?php
+                foreach($lesContinents as $continent){
+                    $selection=$continent->num == $laNationalite->numContinent ? 'selected' : '';
+                    echo "<option value='$continent->$num' $selection>$continent->$libelle</option>";
+                    
+                }
+                ?>
+            </select>
         </div>
         <input type="hidden" id="num" name="num" value="<?php if($action == "Modifier") {echo $laNationalite-> num;} ?>">
         <div class="row">
