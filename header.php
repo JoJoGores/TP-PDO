@@ -58,7 +58,7 @@
         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-regular fa-flag"></i> Gestion des genres</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01">
           <a class="dropdown-item" href="listenationalites.php">Listes des nationalitées</a>
-          <a class="dropdown-item" href="formAjoutNationalite.php">Ajouter des nationalitées</a>
+          <a class="dropdown-item" href="formNationalite.php">Ajouter des nationalitées</a>
         </div>
       </li>
     </ul>
